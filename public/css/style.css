@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap');
+:root {
+	--dark-color-a: #667aff;
+	--dark-color-b: #7386ff;
+	--light-color: #e6e9ff;
+	--success-color: #5cb85c;
+	--error-color: #d9534f;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background: var(--light-color);
+	margin: auto;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	cursor: pointer;
+	padding: 5px 15px;
+	background: white;
+	color: black;
+	border: 0;
+	font-size: 17px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	border-radius:10px ;
+}
+
+/* Chat Page */
+
+.chat-container {
+	max-width: 1100px;
+	max-height: 70vh;
+	background: rgba(0,0,0,0.13);
+	margin: auto;
+	overflow: hidden;
+	border-radius: 10px;
+	
+}
+
+.chat-header {
+	background: rgba(0,0,0,0.13);
+	color: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: black;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+.chat-header span{
+	font-family: 'Montserrat', sans-serif;
+	font-size: ;
+}
+.chat-main {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.chat-sidebar {
+	background: rgba(0,0,0,0.13);;
+	color: #fff;
+	padding: 20px 20px 60px;
+	overflow-y: scroll;
+}
+
+.chat-sidebar h2 {
+	font-size: 20px;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.chat-sidebar h3 {
+	margin-bottom: 15px;
+}
+
+.chat-sidebar ul li {
+	padding: 10px 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.chat-messages {
+	padding: 30px;
+	max-height: 500px;
+	overflow-y: scroll;
+}
+
+.chat-messages .message {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: #83F52C;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.chat-messages .message .meta {
+	font-size: 15px;
+	font-weight: bolder;
+	color: black;
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span {
+	color: #777;
+}
+
+.chat-form-container {
+	padding: 20px 30px;
+	background-color: rgba(0,0,0,0.13);k;
+}
+
+.chat-form-container form {
+	display: flex;
+}
+
+.chat-form-container input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	flex: 1;
+}
+
+/* Join Page */
+.join-container {
+	max-width: 500px;
+	margin: auto;
+	padding-top: 18%;
+	color: #fff;
+}
+
+.join-header {
+	text-align: center;
+	padding: 20px;
+	background: #00CED1);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.join-header h1{
+
+	font-size: 40px;
+
+}
+.join-main {
+	padding: 30px 40px;
+	background:rgba(0,0,0,0.13);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin: auto;
+	font-family: 'Montserrat', sans-serif;
+	border-style: solid;
+	font-weight: bold;
+}
+
+.join-main p {
+	margin-bottom: 20px;
+}
+
+.join-main .form-control {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.form-control #room{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.join-main label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.join-main input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main select {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main .btn {
+	margin-top: 20px;
+	width: 100%;
+}
+
+@media (max-width: 700px) {
+	.chat-main {
+		display: block;
+	}
+
+	.chat-sidebar {
+		display: none;
+	}
+}
+
+
+section{
+	width:100%;
+	height: 100vh;
+	background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
+	background-size: 400% 400%;
+	position: relative;
+	animation: change 10s ease-in-out infinite;
+}
+
+ @keyframes change{
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+
+} 
+/*joinbutton*/
+
+.btn-j{
+
+	min-width: 100px;
+    margin: auto;
+	text-align: center;
+	margin-left: 22%;
+	border-radius: 10px;
+	background: white;
+	font-size: 15px;
+	
+}
+
+.btn-j:hover{cursor: pointer}
+    button {
+      background: transparent; outline: none;
+      position: relative;
+      border: 2px solid #111;
+      padding: 15px 50px;
+      overflow: hidden;
+    }
+
+    /*button:before (attr data-hover)*/
+    .btn-j:hover:before{opacity: 1; transform: translate(0,0);}
+    .btn-j:before{
+      content: attr(data-hover);
+      position: absolute;
+      top: 1.1em; left: 0;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      opacity: 0;
+      transform: translate(-100%,0);
+	  transition: all .3s ease-in-out;
+    }
+      /*button div (button text before hover)*/
+	  .btn-j:hover div{opacity: 0; transform: translate(100%,0)}
+      .btn-j div{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+        font-size: .8em;
+		transition: all .3s ease-in-out;
+	
+      }
