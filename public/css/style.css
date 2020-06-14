@@ -43,6 +43,64 @@ a {
 	border-radius:10px ;
 }
 
+
+
+
+/*SVG*/
+.container{
+	position: relative;
+	width: 2.5em;
+	height: 3em;
+	top: 2.5em;
+	left:1.6em
+	}
+	
+	.container .icon{
+	width: 2em;
+	left: 2em;
+	}
+	.container .icon path{
+	fill: transparent;
+	stroke-width:5;
+	stroke:white
+	}
+	.container .icon.chat path{
+		stroke-dasharray: 1500;
+		stroke-dashoffset: 0;
+	}
+	.container .icon.chat path{
+		animation: animate-chat,animate-chat,animate-chat,animate-chat;
+		animation-duration: 6s;
+		animation-iteration-count: infinite;
+		animation-fill-mode: forwards;
+		animation-direction: linear;
+		animation-delay: 2s;
+		}
+	
+	
+	@keyframes animate-chat{
+	0%{
+		stroke-dashoffset: 0;
+	}
+	40%{
+		stroke-dashoffset: 1500;
+	}
+	80%{
+		stroke-dashoffset: 3000;
+		fill: transparent;
+	}
+	90%{
+		stroke-dashoffset: 3000;
+		fill:white;
+	}
+	
+	100%{
+		stroke-dashoffset: 3000;
+		fill:white 
+	}
+	
+		}
+
 /* Chat Page */
 
 .chat-container {
@@ -145,7 +203,7 @@ a {
 .join-container {
 	max-width: 500px;
 	margin: auto;
-	padding-top: 15%;
+	padding-top: 10%;
 	color: #fff;
 }
 
