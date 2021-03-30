@@ -10,10 +10,10 @@ Meet-in is a Real time Chat Room Web Application with great UI. Multiple Users c
 
 - NodeJs
 - Socket.io
--Express
--JS
--HTML
--CSS
+- Express
+- JS
+- HTML
+- CSS
 
 
 [Back To The Top](#read-me-template)
